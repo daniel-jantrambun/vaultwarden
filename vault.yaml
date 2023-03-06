@@ -1,0 +1,23 @@
+adminToken: "<setup admingtoken>"
+domain: "https://vault.your-domain.com"
+signupDomains: "your-domain.net"
+
+smtp:
+  host: mail.gandi.net
+  port: 587
+  from: no-reply@your-domain.net
+  fromName: "Vault Administrator"
+  username: you@your-domain.net
+  password: "<your_password>"
+  authMechanism: "Plain,Login,Xoauth2"
+  acceptInvalidHostnames: "true"
+  acceptInvalidCerts: "true"
+  debug: true
+
+storage:
+  enabled: true
+  size: "1Gi"
+  class: "standard"
+
+service: 
+  type: ClusterIP
